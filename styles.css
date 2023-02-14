@@ -221,6 +221,26 @@ body {
 
 /* LAST THREE COLUMNS  */
 
+.portfolio-img-text-wrapper{
+    position: absolute;
+    /* text will be at the top */
+    top: 0;
+    /* elements inside it will use flex */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align top to bottom */
+    align-items: center;
+    /* full parent height */
+    height: 100%;
+    width: 33%;
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 100px;
+
+}
+
+
 .portfolio-items-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -239,12 +259,30 @@ body {
     background-repeat: no-repeat;
 }
 
-.logo-wrapper img {
-    width: 70%;
-    margin-bottom: 20px;
-    
+
+.portfolio-img-text-wrapper .portfolio_title {
+    transition: 1s;
+    font-weight: 600;
+    color:transparent;
+    font-size: 80px;
 }
 
+.portfolio-img-text-wrapper:hover .portfolio_title {
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+.portfolio-img-text-wrapper .portfolio_subtitle {
+    transition: 1s;
+    font-weight: 600;
+    color:transparent;
+    /* font-size: 80px; */
+}
+
+.portfolio-img-text-wrapper:hover .portfolio_subtitle {
+    font-weight: 600;
+    color: lightseagreen;
+}
 
 /* About page styles */
 
