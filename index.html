@@ -29,38 +29,97 @@
         </div>
 
         <div class="content-wrapper">
+            <div class="current_research">
+                <div class="current-research-items-wrapper">
+                    <div class="current-research-item-wrap">
+                        <div class="current-research-img-background" style="background-image:url(Images/time_series.jpg)">
+                        </div>
+
+                        <div class="img-text-wrapper">
+                            <div class="title">
+                                Houston, TX
+                                <br>
+                                
+                                <!-- <img src="overlayed_text/current_research.png">  -->
+                            </div>
+    
+                            <div class="subtitle">
+                                Atmospheric Rresearch in Built Urban Environment
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="past_research">
+                <div class="past_research-items-wrapper">
+                    <div class="past_research-item-wrap">
+                        <div class="past_research-img-background" style="background-image:url(Images/hurricane.jpg)">
+                        </div>
+    
+                        <div class="past-research-img-text-wrapper">
+                            <div class="hurricane_title">
+                                Hurricanes: 
+                            </div>
+    
+                            <div class="hurricane_subtitle">
+                                Boundary Layer Dynamics
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                    <div class="past_research-item-wrap">
+                        <div class="past_research-img-background" style="background-image:url(Images/nasa_gif.gif)" loop=infinite>
+                        </div>
+    
+                        <div class="past-research-img-text-wrapper">
+                            <div class="hurricane_title">
+                                Hurricanes:
+                            </div>
+    
+                            <div class="hurricane_subtitle">
+                                Momentum Roughness Length Impact
+                            </div>
+                        </div>
+    
+                    </div>
+    
+    
+                </div>
+            </div>
             <div class="portfolio-items-wrapper">
                 <!--each of these item-wrapper is one pic -->
                 <!-- this one is for hurricane research -->
                 <div class="portfolio-item-wrapper">
                     <div class="portfolio-img-background" style="background-image:url(Images/hurricane_front_page.jpg)">
                     </div>
-
+    
                     <div class="img-text-wrapper">
                         <div class="logo-wrapper">
                             <!-- this is the text over the pic -->
                             <img src="overlayed_text/hurricanes.png"> 
                             
                         </div>
-
+    
                         <div class="subtitle">
                             Research about Hurricane Boundary Layer parameterization
                         </div>
                     </div>
                 </div>
-
+    
                 <!-- this one is for projects -->
                 <div class="portfolio-item-wrapper">
                     <div class="portfolio-img-background" style="background-image:url(Images/code_front_page.jpg)">
                     </div>
-
+    
                     <div class="img-text-wrapper">
                         <div class="logo-wrapper">
                             <!-- the text over it -->
                             <img src="overlayed_text/projects.png"> 
                             
                         </div>
-
+    
                         <div class="subtitle">
                             Some might-be interesting projects
                         </div>
@@ -70,42 +129,27 @@
                 <div class="portfolio-item-wrapper">
                     <div class="portfolio-img-background" style="background-image:url(Images/equations_front_page.jpg)">
                     </div>
-
+    
                     <div class="img-text-wrapper">
                         <div class="logo-wrapper">
                             <img src="overlayed_text/classes.png"> 
                         </div>
-
+    
                         <div class="subtitle">
                             Important highights from some of the classes
                         </div>
                     </div>
                 </div>
-
-                
-
-            </div>
-
-            <div class="current_research">
-                <div class="current-research-items-wrapper">
-                    <div class="current-research-item-wrap">
-                        <div class="current-research-img-background" style="background-image:url(Images/equations_front_page.jpg)">
-                        </div>
-
-                        <div class="img-text-wrapper">
-                            <div class="logo-wrapper">
-                                <img src="overlayed_text/current_research.png"> 
-                            </div>
     
-                            <div class="subtitle">
-                                Important highightss from some of the classes
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
+                
+    
             </div>
-        </div>
+        </div> 
+     
+    </div>
+            
+
+            
 
     </div>
 
@@ -145,6 +189,29 @@
 
     // loop through them
     current_research.forEach(portfolioItem => {
+
+        // make each do something when mouseovered it
+        portfolioItem.addEventListener('mouseover', () => {
+            // this is for logging
+            console.log(portfolioItem);
+            portfolioItem.childNodes[1].classList.add('img-darken');
+
+        })
+
+        portfolioItem.addEventListener('mouseout', () => {
+            // this is for logging
+            // console.log(portfolioItem);
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+
+        })
+
+
+    })
+
+    const previous_research = document.querySelectorAll('.past_research-item-wrap')
+
+    // loop through them
+    previous_research.forEach(portfolioItem => {
 
         // make each do something when mouseovered it
         portfolioItem.addEventListener('mouseover', () => {
