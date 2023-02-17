@@ -69,6 +69,7 @@ body {
 .current-research-items-wrapper {
     display: grid;
     grid-template-columns: 1fr;
+    
 }
 
 /* this is necessary for parent */
@@ -82,9 +83,11 @@ body {
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-style: solid;
-    border-color: black;
-    border-width: 6px 6px 6px 6px; /* 25px top, 10px right, 4px bottom and 35px left */
+    border-style: inset;
+    border-color: rgb(0, 0, 0);
+
+    border-width: 1px 1px 1px 1px; /* 25px top, 10px right, 4px bottom and 35px left */
+    border-radius: 10%;
     
 }
 
@@ -104,6 +107,7 @@ body {
     width: 100%;
     text-align: center;
     padding-left: 10px;
+    
     
     padding-right: 10px;
     
@@ -170,13 +174,14 @@ body {
 
 .past_research-img-background {
     height: 400px;
-    width: 100%;
+    width: 93%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-style: solid;
-    border-color: black;
-    border-width: 0px 6px 0px 6px; /* 25px top, 10px right, 4px bottom and 35px left */
+    border-color: rgb(255, 255, 255);
+    border-width: 1px 1px 1px 1px; /* 25px top, 10px right, 4px bottom and 35px left */
+    border-radius: 20%;
 }
 
 
@@ -247,7 +252,7 @@ body {
     width: 33%;
     text-align: center;
     padding-left: 0px;
-    padding-right: 100px;
+    padding-right: 0px;
 
 
 }
@@ -265,13 +270,15 @@ body {
 
 .portfolio-img-background {
     height: 350px;
-    width: 100%;
+    width: 88%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-style: solid;
     border-color: black;
-    border-width: 6px 6px 6px 6px; /* 25px top, 10px right, 4px bottom and 35px left */
+    border-width: 1px 1px 1px 1px; /* 25px top, 10px right, 4px bottom and 35px left */
+    border-radius: 10%;
+    margin: auto;
 }
 
 
@@ -301,6 +308,18 @@ body {
 
 /* About page styles */
 
+
+.big-pic{
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+.big-pic-wrapper img{
+    height: 1024px;
+    width:100%
+}
+
 .two-column-wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -326,9 +345,9 @@ body {
 /* position of the icons*/
 .media {
     position: absolute;
-    top: 80%;
+    top: 200%;
     left: 70%;
-    transform: translate(-53%,-50%);
+    /* transform: translate(-53%,-50%); */
     
 }
 
