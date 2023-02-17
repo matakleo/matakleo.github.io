@@ -345,8 +345,8 @@ body {
 /* position of the icons*/
 .media {
     position: absolute;
-    top: 200%;
-    left: 70%;
+    top: 170%;
+    left: 60%;
     /* transform: translate(-53%,-50%); */
     
 }
