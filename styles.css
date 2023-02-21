@@ -184,6 +184,7 @@ body {
     border-color: rgb(255, 255, 255);
     border-width: 1px 1px 1px 1px; /* 25px top, 10px right, 4px bottom and 35px left */
     border-radius: 20%;
+    object-fit: contain;
 }
 
 
@@ -317,10 +318,29 @@ body {
 
 }
 
+.Houston-big-pic{
+    display: block;
+    grid-template-columns: 1fr;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.Housotn-big-pic-wrapper img{
+
+    height: 774px;
+    width:100%
+}
 .big-pic-wrapper img{
     height: 1024px;
     width:100%
+    
 }
+img {
+
+    object-fit: scale-down;
+  }
 
 .two-column-wrapper{
     display: grid;
@@ -375,10 +395,11 @@ ion-icon {
 
 
 
-/* li {
-    list-style:none;
-    display: inline-block;
-    font-size: 20px;
-    border: 1px solid #fff;
-    border-radius: 50%;
-} */
+  .block {
+    text-decoration: none;
+    width: 200px;
+    height: 272px;
+    background:transparent;
+    border: 0;
+    display: block;
+}
