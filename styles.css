@@ -395,11 +395,20 @@ ion-icon {
 
 
 
-  .block {
-    text-decoration: none;
-    width: 200px;
-    height: 272px;
-    background:transparent;
-    border: 0;
-    display: block;
+.single-column-style {
+    display: grid;
+    grid-template-columns: 1fr;
+
+ 
+
+}
+
+.atmospheric-research-wrapper h1{
+    /* position:fixed; */
+    text-align:center;
+}
+
+.atmospheric-research-wrapper h2{
+    /* position:fixed; */
+    text-align:center;
 }
