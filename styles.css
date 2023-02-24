@@ -68,14 +68,10 @@ body {
 /* SINGLE UPPER SINGLE COLUMN */
 
 .current-research-items-wrapper {
-    /* display: grid; */
-    /* grid-template-columns: 1fr; */
-    display: block;
+    display: grid;
     grid-template-columns: 1fr;
-    background-size:cover;
-    background-position: center;
-    background-repeat: no-repeat;
     
+    width: 100%;
 }
 
 /* this is necessary for parent */
@@ -85,7 +81,7 @@ body {
 
 .current-research-img-background {
     height: 350px;
-    width: 100%;
+
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
