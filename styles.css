@@ -68,8 +68,13 @@ body {
 /* SINGLE UPPER SINGLE COLUMN */
 
 .current-research-items-wrapper {
-    display: grid;
+    /* display: grid; */
+    /* grid-template-columns: 1fr; */
+    display: block;
     grid-template-columns: 1fr;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
     
 }
 
