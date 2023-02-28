@@ -82,10 +82,10 @@ body {
 .current-research-img-background {
     height: 350px;
 
-    background-size:90%;
+    background-size:100%;
     background-position: center;
     background-repeat: no-repeat;
-    border-style: dashed;
+    border-style: fill;
     border-color: grey;
 
     border-width: 0.1px 0.1px 0.1px 0.1px;
